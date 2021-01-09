@@ -14,23 +14,33 @@ nav{
     justify-content: space-between;
 }
 .logo{
-    margin-left: 100px;
+    margin: 0 auto;
 }
-.info{
+.topnav{
+    margin: 0 auto;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
     width: 500px;
 }
-.info>a{
+.topnav>a{
     text-decoration: none;
     color: white;
     text-align: center;
     align-items: center;
-
+    padding: 12px 16px;
     font-size: 20px;
-}nav>button{
+}
+.topnav a:hover{
+    border-bottom: 3px solid #fcac45;
+    font-size: 24px;
+}
+.topnav .icon{
+    display: none;
+}
+nav>button{
+    margin: 0 auto;
     text-align: center;
     border-radius: 39px !important;
     width: 154px;
@@ -38,7 +48,7 @@ nav{
 }
 .container{
     width: 100%;
-    height: 1050px auto;
+    height: 1050px;
 }
 .content{
     text-align: center;
@@ -176,12 +186,19 @@ nav{
     text-decoration: none;
     color: #03D6F3;
 }
+.container3{
+    width: 100%;
+}
 .ioo{
+    margin-left: 100px;
+    text-align: center;
     display: flex;
     margin-top: 250px;
 
 }
-.quick{
+.quick>img{
+    margin-left: 100px;
+    margin: 0 auto;
     margin-top: 150px;
     font-weight: 700;
     color: #5C5C5C; 
@@ -211,6 +228,7 @@ nav{
     margin-left: 20px;
 }
 .col{
+    width: 400px;
     margin-left: 200px;
 }
 .rio{
@@ -234,6 +252,10 @@ nav{
     height: 52px;
     border: none;
     color: white;
+}
+.container5{
+    width: 100%;
+    margin-left: 100px;
 }
 .smallbus{
     margin-top: 100px;
@@ -271,6 +293,10 @@ nav{
 }
 .bust2{
     margin-left: 30px;
+}
+.container6{
+    width: 100%;
+    margin: 0 100px 0 100px;
 }
 .text{
     text-align: center;
@@ -314,15 +340,15 @@ nav{
     border-radius: 39px;
     border: none;
 }
-.content4{
+.content7{
     text-align: center;
     margin-top: 300px;
     height: 300px;
 }
-.content4>h1{
+.content7>h1{
     margin-top: 20px;
 }
-.content4>p{
+.content7>p{
     margin-top: 20px;
 }
 .da>input{
@@ -341,4 +367,288 @@ nav{
     border-radius: 39px;
     border: none;
     color: white;
+}
+
+
+@media ( max-width: 370px) {
+    .topnav a{
+        display: none;
+    }    
+    .topnav a.icon{
+        float: right;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    nav .btn{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    nav .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .topnav.responsive a.icon{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .container{
+    
+        height: 600px;
+    }
+    .content h3{
+        text-align: center;
+        width: 307px;
+        height: 171px;
+        position: static;
+        left: 3.06%;
+        right: 3.06%;
+        top: 5.24%;
+        bottom: 5.24%;
+    }
+    .content>p{
+        position: static;
+        left: 2.82%;
+        right: 2.82%;
+        top: 16.67%;
+        bottom: 16.67%;
+    }
+    .content>.buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .buttons>.btn{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .picture > img{
+        position: static;
+        width: 304px;
+        height: 170px;
+        left: 10px;
+        top: 100px;
+
+        
+    }
+    .container2{
+        width: 100%;
+        height: 1500px;
+    }
+    .content2{
+        height: 1500px;
+    }
+    .content2>h1{
+        margin: 0 auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 46px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 57px;
+        text-align: center;
+        width: 300px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .card{
+        margin: 15px 0 15px 0;
+    }
+    .card-2{
+        margin: 15px 0 15px 0;
+    }
+    .card-3{
+        margin: 15px 0 15px 0;
+    }
+    .container3{
+        width: 100%;
+        height: 800px;
+    }
+    .content3{
+        height: 800px;
+    }
+    .ioo{
+        height: 300px;
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    .quick>img{
+        margin-top: 0;
+        margin-left: 20px;
+        width: 290px;
+        text-align: center;
+    }
+    .quick>p{
+        margin-left: 31px;
+        width: 300px;
+        text-align: center;
+        position: static;
+        left: 3%;
+        right: 2.8%;
+        top: 10%;
+        bottom: 10%;
+    }
+    .col{
+        margin-left:0;
+        text-align: center;
+    }
+    .col>img{
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+    }
+    .buts{
+        text-align: center;
+        display: block;
+
+    }
+    .buts>.btn3{
+        margin: 10px 0 10px 0;
+        margin-left: 0;
+    }
+
+    .container4{
+        width: 100%;
+        height: 600px;
+    }
+    .rio{
+        margin-top: 0;
+        display: block;
+    }
+    .ru>img{
+        width: 330px;
+    }
+    .ru2{
+        margin: 0;
+    }
+    .ru2>h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .ru2>p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .ru2>button{
+        text-align: center;
+        margin-left: 110px;
+    }
+    .container5{
+        margin-left: 0;
+        width: 100%;
+        height: 900px;
+    }
+    .smallbus{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bust>h1{
+        text-align: center;
+    }
+    .bust>p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .sec-but{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .sec-but>button{
+        margin-right: 0;
+    }
+    .sec-but>.sec1{
+        margin-left: 0;
+        margin: 15px 0 15px 0;
+    }
+    .bust2>img{
+        width: 300px;
+    }
+    .container6{
+        margin-left: 0;
+        width: 100%;
+        height: 3767px;
+    }
+    .container6>.text{
+        margin-top: 0;
+        text-align: center;
+    }
+    .text>h1{
+        font-size: 46px;
+        font-weight: 500;
+        margin: 0 auto;
+    }
+    .text>p{
+        margin: 0 auto;
+        font-size: 18px;
+        width: 250px;
+    }
+    .cards3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards3>.cardd{
+        margin: 15px 0 15px 0;
+        width: 270px;
+        height: 1089px;
+    }
+    .container7{
+        width: 100%;
+        height: 244px;
+    }
+    .content7{
+        margin-top: 0;
+        height: 244px;
+    }
+    .content7>h1{
+        font-size: 19px;
+        margin: 0 auto;
+    }
+    .content7>p{
+        font-size: 13px;
+    }
+    .da{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .da>input{
+        width: 300px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .da>button{
+        width: 300px;
+        height: 50px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
 }
